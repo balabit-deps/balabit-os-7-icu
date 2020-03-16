@@ -1,3 +1,14 @@
+icu (60.2-3ubuntu3.1) bionic-security; urgency=medium
+
+  * SECURITY UPDATE: Integer Overflow
+    - debian/patches/CVE-2020-10531.patch: adds a int32_t overflow
+      check when calculate a newLen in doReplace function in
+      source/common/unistr.cpp and adding test to
+      source/test/intltest/ustrtest.*.
+    - CVE-2020-10531
+
+ -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Mon, 16 Mar 2020 15:45:22 -0300
+
 icu (60.2-3ubuntu3) bionic; urgency=medium
 
   * Correct Breaks for openttd.
